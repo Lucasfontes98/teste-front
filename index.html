@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Calculadora de Índice de Massa Corporal (IMC)</h1>
+                <p class="hero-subtitle">Entenda melhor o seu peso em relação à sua altura com nossa calculadora de IMC.</p>
+                <p class="hero-description">Enquanto o IMC não é o único determinante de um peso saudável, ele oferece um ponto de partida valioso para avaliar sua saúde e bem-estar geral.</p>
+            </div>
+            <div class="calculator-container">
+                <h2>Insira seus dados abaixo</h2>
+                <form id="imcForm">
+                    <div class="input-group-container">
+                        <div class="input-group">
+                            <label for="altura">Altura</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="altura" placeholder="185" required>
+                                <span class="unit">cm</span>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="peso">Peso</label>
+                            <div class="input-wrapper">
+                                <input type="number" id="peso" placeholder="80" required>
+                                <span class="unit">kg</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit">Calcular</button>
+                </form>
+                <div id="resultado" class="resultado">
+                    <h3>Seu IMC é...</h3>
+                    <div class="bmi-result">
+                        <span id="bmi-value"></span>
+                        <p id="bmi-explanation"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="results-content">
+            <div class="results-image">
+                
+                <img src="img/imagem.png.webp" alt="Imagem de uma pessoa comendo">
+            </div>
+            <div class="results-text">
+                <h2>O que significa o resultado do seu IMC</h2>
+                <p id="imc-range">Seu resultado será exibido aqui.</p>
+                <p id="imc-explanation">Uma explicação detalhada do resultado será mostrada.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="health-tips-section">
+        <div class="health-tips-container">
+            <div class="tip-card">
+                <img src="images/icon-eating.svg" alt="alime">
+                <h3>Alimentação Saudável</h3>
+                <p>Uma alimentação saudável promove o controle de peso, prevenção de doenças, melhor digestão, imunidade, clareza mental e bom humor.</p>
+            </div>
+            <div class="tip-card">
+                <img src="images/icon-exercise.svg" alt="exer">
+                <h3>Exercício Regular</h3>
+                <p>O exercício melhora a aptidão física, ajuda no controle de peso, eleva o humor e reduz o risco de doenças, promovendo bem-estar e longevidade.</p>
+            </div>
+            <div class="tip-card">
+                <img src="images/icon-sleep.svg" alt="sono">
+                <h3>Sono Adequado</h3>
+                <p>O sono melhora a clareza mental, a estabilidade emocional e o bem-estar físico, promovendo a restauração e o rejuvenescimento geral.</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <section class="limitations-section">
+        <div class="limitations-header">
+            <div class="header-text">
+                <h2>Limitações do IMC</h2>
+                <p class="limitations-description">Embora o IMC seja frequentemente usado como um indicador prático de peso saudável, ele pode não ser adequado para todas as pessoas. Grupos específicos devem considerar cuidadosamente seus resultados de IMC, pois, em alguns casos, a medição pode não ser benéfica.</p>
+            </div>
+            <div class="limitation-card main-card">
+                <img src="images/icon-gender.svg" alt="ic">
+                <h3>Gênero</h3>
+                <p>O desenvolvimento e a composição de gordura corporal de meninas e meninos variam com a idade. Consequentemente, a idade e o gênero de uma criança devem ser considerados ao avaliar seu IMC.</p>
+            </div>
+        </div>
+        <div class="limitations-grid">
+            <div class="limitation-card">
+                <img src="images/icon-age.svg" alt="age">
+                <h3>Idade</h3>
+                <p>Em indivíduos mais velhos, o aumento da gordura corporal e a perda muscular podem fazer com que o IMC subestime a quantidade de gordura corporal.</p>
+            </div>
+            <div class="limitation-card">
+                <img src="images/icon-muscle.svg" alt="muscle">
+                <h3>Músculo</h3>
+                <p>O IMC pode classificar erroneamente indivíduos musculosos como com sobrepeso ou obesidade, pois não diferencia músculo de gordura.</p>
+            </div>
+            <div class="limitation-card">
+                <img src="images/icon-pregnancy.svg" alt="bb"> 
+                <h3>Gravidez</h3>
+                <p>Gestantes ganham peso devido ao crescimento do bebê. Manter um IMC saudável antes da gravidez é recomendado para minimizar riscos à saúde da mãe e do bebê.</p>
+            </div>
+            <div class="limitation-card">
+                <img src="images/icon-race.svg" alt="raça">
+                <h3>Raça</h3>
+                <p>Certas preocupações de saúde podem afetar indivíduos de origens específicas, como afrodescendentes e asiáticos, em IMCs mais baixos. Recomenda-se discutir isso com um profissional de saúde.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
